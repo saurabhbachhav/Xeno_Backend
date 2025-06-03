@@ -54,7 +54,7 @@ const Customer = require("../models/Customer");
       }
     } catch (err) {
       console.error("Consumer error:", err);
-      // थोड़ा इंतज़ार कर दो तब फिर से ट्राई करो
+      
       await new Promise((res) => setTimeout(res, 2000));
     }
   }
